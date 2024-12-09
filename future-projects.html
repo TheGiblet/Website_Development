@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Future Robotics Projects</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+</head>
+<body>
+
+  <header>
+    <div class="gallery"> 
+      <a href="images/header.jpg"> <img src="images/header.jpg" alt="Header Image" class="watermarked-image"> </a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="products.html">Products</a></li> 
+    </ul>
+  </nav>
+
+  <main> 
+
+    <h1>Giblets Creations</h1> 
+
+    <h2>Future Robotics Projects</h2>
+
+    <h2>Self-Balancing Robot (In Development)</h2>
+    <img src="images/selfbalancing-concept.jpg" alt="Concept image or sketch of your self-balancing robot"> 
+
+    <h3>Overview</h3>
+    <p>This is my next big robotics challenge! I'm currently developing a two-wheeled self-balancing robot designed for agility and maneuverability. It will feature a sleek, compact design with a low center of gravity for enhanced stability. The robot's "brain" will be a Raspberry Pi Zero 2 W, responsible for processing sensor data and controlling the motors in real-time.</p> 
+    <p>To maintain its balance, the robot will utilize an MPU-6050 IMU (Inertial Measurement Unit) that combines a gyroscope and an accelerometer. The gyroscope will measure the robot's angular velocity (how fast it's tilting), while the accelerometer will measure its acceleration and tilt angle. This data will be fed into a PID (Proportional-Integral-Derivative) control algorithm, which will constantly adjust the speed and direction of the two motors to keep the robot upright.</p> 
+    <p>But this robot will be more than just a balancing act! I plan to incorporate some exciting features:</p>
+    <ul>
+      <li>Line following: Using infrared sensors, the robot will be able to detect and follow lines on the floor. To add some flair, I'm planning a "squatting" motion with servo-controlled arms before it starts following a line.</li>
+      <li>Obstacle avoidance: An ultrasonic sensor will allow the robot to detect obstacles in its path and navigate around them.</li>
+      <li>Visual feedback: An RGB LED will provide colorful status indicators, changing color based on the robot's actions.</li>
+      <li>Remote control: The Raspberry Pi's built-in Bluetooth will enable wireless control of the robot from a smartphone or tablet.</li>
+    </ul>
+
+    <h3>Technical Details (Planned)</h3> 
+    <p>
+      <strong>Sensors:</strong>
+      <ul>
+        <li>MPU-6050 IMU (gyroscope and accelerometer)</li>
+        <li>HC-SR04 ultrasonic sensor</li>
+        <li>Infrared line following sensors</li>
+      </ul>
+    </p>
+    <p>
+      <strong>Control Algorithm:</strong> PID controller (to be implemented in Python on the Raspberry Pi). The algorithm will take the IMU data as input and calculate the necessary motor adjustments to maintain balance.
+    </p>
+    <p>
+      <strong>Actuators:</strong>
+      <ul>
+        <li>Two TT Gear motors for driving the wheels</li>
+        <li>Two MG996R servo motors for steering and the "squatting" motion</li>
+      </ul>
+    </p>
+    <p>
+      <strong>Materials:</strong>
+      <ul>
+        <li>Raspberry Pi Zero 2 W</li>
+        <li>PCA9685 servo driver</li>
+        <li>L298N motor driver</li>
+        <li>LiPo battery</li>
+        <li>Custom-built chassis using acrylic or similar material</li>
+        <li>Various electronic components (resistors, wires, etc.)</li>
+      </ul>
+    </p>
+
+    <h3>Challenges and Lessons Learned (Anticipated)</h3>
+    <p>I anticipate that this project will present some interesting challenges, such as:</p>
+    <ul>
+      <li>Calibrating the PID controller: Finding the optimal PID parameters for stable balancing will likely require careful tuning and experimentation.</li>
+      <li>Integrating multiple sensors: Combining the data from different sensors (IMU, ultrasonic, line following) and coordinating the robot's actions will require a well-structured approach to programming.</li>
+      <li>Mechanical design: Designing a stable and robust chassis that can accommodate all the components and withstand the forces involved in balancing will be crucial.</li>
+      <li>Power management: Ensuring sufficient power for all the components, especially the motors and servos, will be an important consideration.</li>
+    </ul>
+    <p>I expect to gain valuable experience in:</p>
+    <ul>
+      <li>Robotics and electronics: Working with microcontrollers, sensors, and motors.</li>
+      <li>Programming: Implementing control algorithms and sensor integration in Python.</li>
+      <li>Problem-solving: Troubleshooting hardware and software issues.</li>
+      <li>Persistence: Overcoming challenges and seeing the project through to completion.</li>
+    </ul>
+
+
+    <h2>Ballbot (In Development)</h2>
+    <img src="images/ballbot-concept.jpg" alt="Concept image or sketch of your ballbot"> 
+
+    <h3>Overview</h3>
+    <p>This project aims to design and build a self-balancing robot, known as a ballbot, which utilizes a single ball as its primary means of locomotion. Unlike traditional wheeled robots, ballbots offer exceptional maneuverability and agility due to their unique single point of contact with the ground. The robot will be controlled by a Raspberry Pi Zero 2W and driven by four motors, enabling it to move smoothly and precisely in any direction.</p>
+
+    <h3>Technical Details (Planned)</h3>
+    <p>
+      <strong>Locomotion:</strong> A spherical ball will act as the sole wheel, with movement achieved through four independently controlled rollers arranged in a diamond configuration.
+    </p>
+    <p>
+      <strong>Control System:</strong> A Raspberry Pi Zero 2W will serve as the central processing unit, responsible for reading sensor data, executing control algorithms, and regulating motor speeds.
+    </p>
+    <p>
+      <strong>Motor Control:</strong> A PCA9685 PWM driver will facilitate precise control of the four DC motors, allowing for independent speed and direction adjustments.
+    </p>
+    <p>
+      <strong>Sensors:</strong>
+      <ul>
+        <li>An Inertial Measurement Unit (IMU) comprising an accelerometer and gyroscope will provide real-time data on the robot's orientation and angular velocity.</li>
+        <li>Potentially, encoders on the motors could be used for precise position feedback.</li>
+      </ul>
+    </p>
+    <p>
+      <strong>Programming:</strong> Python will be the primary programming language, utilizing libraries like RPi.bmio, smbus, and mpu6050-raspberrypi for I2C communication, sensor interfacing, and control algorithms.
+    </p>
+    <p>
+      <strong>Power:</strong> A LiPo battery will power the robot, with a voltage regulator ensuring appropriate power delivery to the Pi and other components.
+    </p>
+
+    <h3>Challenges and Lessons Learned (Anticipated)</h3>
+    <p>This project presents some exciting challenges in robotics, including:</p>
+    <ul>
+      <li>Balancing Algorithm: Developing a robust and responsive control algorithm (e.g., a PID controller) to maintain balance on the inherently unstable single-point contact.</li>
+      <li>Mechanical Design: Designing a mechanically sound chassis that securely houses the components while allowing for smooth roller-ball interaction.</li>
+      <li>Calibration and Tuning: Precise calibration of sensors and fine-tuning of the control system to achieve optimal performance.</li>
+      <li>Power Management: Efficient power management to maximize the robot's operational time.</li>
+      <li>Unexpected Behaviors: Addressing unforeseen dynamic instabilities or unexpected behaviors during movement.</li>
+    </ul>
+    <p>This project offers a significant learning opportunity in robotics, encompassing mechanical design, electronics, programming, and control systems. Overcoming these challenges will result in a unique and impressive demonstration of engineering skills and creativity.</p>
+
+    <a href="projects.html">Back to All Projects</a> 
+
+  </main>
+
+  <footer>
+    <div class="gallery">
+      <a href="images/footer2.jpg"><img src="images/footer2.jpg" alt="Footer Image" class="watermarked-image"></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+  <script>
+    lightGallery(document.querySelector('.gallery')); 
+  </script>
+
+</body>
+</html>

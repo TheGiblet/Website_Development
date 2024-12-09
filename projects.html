@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="products.html">Products</a></li> 
+    </ul>
+  </nav>
+
+  <h1>Giblets Creations</h1> 
+
+  <h2>My Projects</h2> 
+
+  <div class="accordion-container"> 
+
+    <h2>Robotics Projects</h2>
+    <div class="accordion-content"> 
+        <p>Explore my ventures into the world of robotics, where I design, build, and program robots to solve challenges and bring ideas to life.</p>
+        <a href="robotics-projects.html" class="learn-more">Learn More</a> 
+    </div>
+
+    <h2>Python Coding Projects</h2>
+    <div class="accordion-content">
+      <p>
+        Explore my Python coding projects, where I leverage the versatility and power of
+        Python to create diverse applications and solutions. These projects
+        demonstrate my proficiency in Python programming and my ability to apply it to
+        various domains.
+      </p>
+      <a href="python-projects.html" class="learn-more">Learn More</a>
+    </div>
+
+    <h2>3D Modeling Projects</h2>
+    <div class="accordion-content">
+      <p>
+        Delve into my 3D modeling endeavors, where I bring ideas to life through digital
+        design and fabrication. These projects showcase my skills in creating intricate
+        and functional 3D models using various software and techniques.
+      </p>
+      <a href="3d-models.html" class="learn-more">Learn More</a>
+    </div>
+
+    <h2>Future Projects</h2>
+    <div class="accordion-content">
+      <p>
+        Explore my upcoming projects and plans for the future. These are the ideas
+        I'm eager to tackle next, pushing the boundaries of my skills and knowledge
+        in robotics and programming.
+      </p>
+      <a href="future-projects.html" class="learn-more">Learn More</a>
+    </div>
+
+  </div> 
+
+  <script>
+    const accordionHeaders = document.querySelectorAll('.accordion-container h2'); 
+
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling; 
+        content.classList.toggle('active'); 
+      });
+    });
+  </script>
+
+</body>
+</html>
