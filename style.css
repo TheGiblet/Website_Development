@@ -98,44 +98,44 @@ height: auto; /* Allow the image to be its original height */
 
 /* Header */
 header {
-  background-color: #333; 
-  padding: 40px 20px; 
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);  
-  position: relative; 
+background-color: #333; 
+padding: 40px 20px; 
+text-align: center;
+color: white;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);  
+position: relative; 
 }
 
 header h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+font-size: 3em;
+margin-bottom: 10px;
 }
 
 /* Featured projects */
 .featured-projects {
-  padding: 20px;
-  background-image: url("images/subtle-texture.jpg"); /* Example textured background */
-  background-size: cover;
+padding: 20px;
+background-image: url("images/subtle-texture.jpg"); /* Example textured background */
+background-size: cover;
 }
 
 .project {
-  border: 1px solid #ddd; 
-  padding: 15px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
-  margin-bottom: 20px;
-  background-color: #ffffff; /* White background for contrast */
+border: 1px solid #ddd; 
+padding: 15px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+margin-bottom: 20px;
+background-color: #ffffff; /* White background for contrast */
 }
 
 .project img:hover {
-  transform: scale(1.1); /* Zoom in slightly */
-  opacity: 0.9; /* Slightly reduce opacity */
-  transition: all 0.3s ease; /* Add a smooth transition */
+transform: scale(1.1); /* Zoom in slightly */
+opacity: 0.9; /* Slightly reduce opacity */
+transition: all 0.3s ease; /* Add a smooth transition */
 }
 
 .project img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
 }
 
 /* Watermarked images */
@@ -157,65 +157,65 @@ border-radius: 5px;
 
 /* About me */
 .about-me {
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
+background-color: #f0f0f0;
+padding: 20px;
+text-align: center;
 }
 
 .about-me img {
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+max-width: 200px;
+height: auto;
+border-radius: 50%;
+margin-bottom: 15px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Call to action */
 .call-to-action {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
+background-color: #333;
+color: white;
+padding: 20px;
+text-align: center;
 }
 
 .contact-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
-  transition: background-color 0.3s ease; 
+display: inline-block;
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border-radius: 5px;
+transition: background-color 0.3s ease; 
 }
 
 .contact-button:hover {
-  background-color: #0056b3; 
+background-color: #0056b3; 
 }
 
 /* Social media */
 .social-media {
-  text-align: center;
-  padding: 20px;
+text-align: center;
+padding: 20px;
 }
 
 .social-media ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .social-media li {
-  display: inline-block;
-  margin: 0 10px;
+display: inline-block;
+margin: 0 10px;
 }
 
 .social-media img {
-  width: 32px; 
-  height: auto;
-  transition: transform 0.2s ease; 
+width: 32px; 
+height: auto;
+transition: transform 0.2s ease; 
 }
 
 .social-media a:hover img {
-  transform: scale(1.1); 
+transform: scale(1.1); 
 }
 
 /* Footer styles */
@@ -240,68 +240,68 @@ height: auto;
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%; 
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px 0;
+width: 100%; 
 }
 
 /* Blog post styles */
 .blog-post {
-  margin-bottom: 30px;
-  border: 1px solid #ddd;
-  padding: 15px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+margin-bottom: 30px;
+border: 1px solid #ddd;
+padding: 15px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post h2 {
-  margin-bottom: 5px;
+margin-bottom: 5px;
 }
 
 .blog-post p {
-  margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
 /* Product styles */
 .product {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+border: 1px solid #ddd;
+padding: 20px;
+margin-bottom: 20px;
+text-align: center;
 }
 
 .product img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
 }
 
 .price {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-top: 10px;
+font-size: 1.2em;
+font-weight: bold;
+margin-top: 10px;
 }
 
 /* Responsive Design (Media Queries) */
 @media (max-width: 768px) {
 nav li {
-  float: none;
-  width: 100%; 
+float: none;
+width: 100%; 
 }
 
 .project {
-  margin-bottom: 30px;
+margin-bottom: 30px;
 }
 }
 
 @media (max-width: 480px) {
 header h1 {
-  font-size: 2em; 
+font-size: 2em; 
 }
 
 .project img {
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 }
 
