@@ -245,4 +245,9 @@ footer {
     font-size: 2em;
     /* Adjust heading size */
   }
+
+  header nav {
+    margin-top: 100px;
+    /* Adjust margin-top as needed */
+  }
 }
