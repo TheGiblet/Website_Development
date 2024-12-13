@@ -6,17 +6,46 @@
     <title>GibletsCreations - Portfolio</title>
     <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* ... your existing styles ... */
+
+        #page-container {
+          transition: opacity 0.5s ease-in-out; /* Adjust duration and timing as needed */
+        }
+
+        #page-container.fade-out {
+          opacity: 0;
+        }
+    
+        .header-image {
+          position: relative; /* Allows positioning the logo within the image */
+        }
+        
+        header .logo {
+          position: absolute; /* Position the logo absolutely within the header image */
+          top: 40px; /* Adjust top position as needed */
+          left: 730px; /* Adjust left position as needed */
+          max-width: 200px; /* Adjust size as needed */
+          height: auto;
+        }
+    </style>
 </head>
 <body>
 
+    <div id="page-container"> 
+
     <header>
         <div class="container">
-            <img src="images/Innovation and Technology.jpg" alt="Innovation and Technology"> 
+            <div class="header-image">
+                <img src="images/Innovation and Technology.jpg" alt="Innovation and Technology"> 
+                <img src="images/logo.png" alt="Giblets Creations Logo" class="logo">
+            </div>
             <h1>Giblets Creations</h1> 
             <nav>
                 <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
                 <a href="projects.html">Projects</a>
+                <a href="about.html">About Me</a>
+                <a href="blog.html">Blog</a>
                 <a href="contact.html" target="_blank">Contact</a> 
             </nav>
         </div>
@@ -53,15 +82,27 @@
     </div> 
 
     <script>
-        const accordionHeaders = document.querySelectorAll('.accordion-container h2'); 
+        // ... (your existing accordion script) ...
 
-        accordionHeaders.forEach(header => {
-            header.addEventListener('click', () => {
-                const content = header.nextElementSibling; 
-                content.classList.toggle('active'); 
+        document.addEventListener('DOMContentLoaded', function() {
+        const pageContainer = document.getElementById('page-container');
+        const links = document.querySelectorAll('a'); 
+
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            const href = this.href; 
+
+            pageContainer.classList.add('fade-out'); 
+
+            setTimeout(function() {
+                window.location.href = href; 
+            }, 500); 
             });
+        });
         });
     </script>
 
+    </div> 
 </body>
 </html>

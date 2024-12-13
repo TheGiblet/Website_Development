@@ -1,175 +1,216 @@
 /* General Styles */
 body {
-    font-family: 'Merriweather', serif; 
-    margin: 0;
-    background-color: #222; 
-    color: #eee; 
-  }
-  
+  font-family: 'Merriweather', serif; 
+  margin: 0;
+  background-color: #222; 
+  color: #eee; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif; 
+}
+
+a {
+  color: #f8b739; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e69d23;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(51, 51, 51, 0.7); 
+  padding: 20px 0;
+  text-align: center;
+  position: relative; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+header nav {
+  margin-top: 10px; 
+}
+
+header nav a {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.header-image {
+  position: relative; /* Allows positioning the logo within the image */
+}
+
+header img { 
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+header .logo {
+  position: absolute; /* Position the logo absolutely within the header image */
+  top: 20px; /* Adjust top position as needed */
+  left: 730px; /* Adjust left position as needed */
+  max-width: 200px; /* Adjust size as needed */
+  height: auto;
+}
+
+header h1 { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+
+/* Hero Section Styles */
+.hero {
+  background-color: #444; 
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f8b739;
+  color: #222;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e69d23;
+}
+
+/* About Section Styles */
+.about {
+  padding: 60px 0;
+  background-color: #222; 
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-content { 
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
+  justify-content: center; 
+  flex-direction: column;  
+  text-align: center;     
+}
+
+.about-content img {
+  max-width: 200px; 
+  height: auto;
+  border-radius: 50%; 
+  transform: scale(0.75); 
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+  padding: 60px 0;
+  background-color: #444;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+}
+
+/* Contact Section Styles */
+.contact {
+  padding: 60px 0;
+  background-color: #222;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Styles (New) */
+.form-group {
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 20px; 
+}
+
+.form-group label {
+  margin-bottom: 5px; 
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 90%; 
   }
-  
-  h1, h2, h3 {
-    font-family: 'Oswald', sans-serif; 
-  }
-  
-  a {
-    color: #f8b739; 
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #e69d23;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: rgba(51, 51, 51, 0.7); 
-    padding: 20px 0;
-    text-align: center;
-    position: relative; 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); 
-  }
-  
-  header nav {
-    margin-top: 10px; 
-  }
-  
-  header nav a {
-    margin: 0 15px;
-    font-weight: bold;
-  }
-  
-  header img { 
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
-  }
-  
-  header h1 { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; 
-    font-size: 3em;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-  }
-  
-  
-  /* Hero Section Styles */
-  .hero {
-    background-color: #444; 
-    padding: 80px 0;
-    text-align: center;
-  }
-  
-  .hero h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-  }
-  
-  .button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #f8b739;
-    color: #222;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #e69d23;
-  }
-  
-  /* About Section Styles */
-  .about {
-    padding: 60px 0;
-    background-color: #222; 
-  }
-  
-  .about h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .about-content { 
-    display: flex; 
-    align-items: center; 
-    gap: 20px; 
-    justify-content: center; 
-    flex-direction: column;  
-    text-align: center;     
-  }
-  
-  .about-content img {
-    max-width: 200px; 
-    height: auto;
-    border-radius: 50%; 
-    transform: scale(0.75); 
-  }
-  
-  /* Portfolio Section Styles */
-  .portfolio {
-    padding: 60px 0;
-    background-color: #444;
-  }
-  
-  .portfolio h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px;
-  }
-  
-  /* Contact Section Styles */
-  .contact {
-    padding: 60px 0;
-    background-color: #222;
-  }
-  
-  .contact h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  /* Form Styles (New) */
-  .form-group {
-    display: flex;
+
+  nav ul { /* Assuming you have a <ul> in your nav */
     flex-direction: column; 
-    margin-bottom: 20px; 
+    text-align: center; /* Center the links */
   }
-  
-  .form-group label {
-    margin-bottom: 5px; 
+
+  nav li { /* Assuming you have <li> elements for your links */
+    margin-bottom: 10px; /* Add space between links */
   }
-  
-  .form-group input,
-  .form-group textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+  .hero h2 {
+    font-size: 2.5em; /* Adjust heading size */
   }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #333;
-    padding: 20px 0;
-    text-align: center;
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for smaller screens */
   }
+}
