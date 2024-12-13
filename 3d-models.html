@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Modeling Projects - GibletsCreations</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* ... your existing styles ... */
+
+        #page-container {
+          transition: opacity 0.5s ease-in-out; /* Adjust duration and timing as needed */
+        }
+
+        #page-container.fade-out {
+          opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="page-container"> 
+
+    <header> 
+        <div class="container">
+            <div class="header-image">
+                <img src="images/Innovation and Technology.jpg" alt="Innovation and Technology"> 
+                <img src="images/logo.png" alt="Giblets Creations Logo" class="logo">
+            </div>
+            <h1>Giblets Creations</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About Me</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" target="_blank">Contact</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>3D Modeling Projects</h2>
+
+        <div class="model-viewer-container">
+            <img src="models/Target-earth-1954-robot.png" alt="Target Earth Robot: A Replica of the 1954 Alien Invader">
+            <div class="model-description">
+                <h3>Target Earth Robot: A Replica of the 1954 Alien Invader</h3>
+                <p>Do you love sci-fi movies and collectables?
+                  You will love this 3D model of the robot from Target Earth, a 1954 independently made American
+                  black-and-white science fiction film that follows a small group of people who survive a sudden invasion
+                  by hostile robotic beings believed to be from the planet Venu.
+                  This 3d replica is based on the original movie design, a ridged body, and of Venusian origin.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 GibletsCreations</p>
+        </div>
+    </footer>
+
+    </div> 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const pageContainer = document.getElementById('page-container');
+          const links = document.querySelectorAll('a'); 
+
+          links.forEach(link => {
+            link.addEventListener('click', function(event) {
+              event.preventDefault(); 
+              const href = this.href; 
+
+              pageContainer.classList.add('fade-out'); 
+
+              setTimeout(function() {
+                window.location.href = href; 
+              }, 500); 
+            });
+          });
+        });
+    </script>
+</body>
+</html>

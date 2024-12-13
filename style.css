@@ -251,3 +251,14 @@ footer {
     /* Adjust margin-top as needed */
   }
 }
+
+.model-viewer-container {
+  height: 400px;
+  /* Add a height to the container */
+}
+
+model-viewer {
+  /* Or add height directly to the model-viewer */
+  width: 100%;
+  height: 100%;
+}
