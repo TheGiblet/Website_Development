@@ -1,17 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const pageContainer = document.getElementById('page-container');
-    const links = document.querySelectorAll('a'); // Select all links
+  const pageContainer = document.getElementById('page-container');
+  const nav = document.querySelector('nav');
+  const transitionSettings = {
+    class: 'fade-out',
+    duration: 500 // In milliseconds
+  };
 
-    links.forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        const href = this.href; // Get the link's destination
+  function handleLinkClick(event) {
+    if (event.target.tagName === 'A') {
+      event.preventDefault();
+      const link = event.target;
+      const href = link.href;
 
-        pageContainer.classList.add('fade-out'); // Start fade-out
+      pageContainer.classList.add(transitionSettings.class);
 
-        setTimeout(function() {
-          window.location.href = href; // Go to the new page after fade-out
-        }, 500); // Adjust delay to match transition duration
-    });
-    });
+      const transitionEndHandler = function() {
+        window.location.href = href;
+        pageContainer.removeEventListener('transitionend', transitionEndHandler); // Remove the listener after redirecting
+      };
+
+      pageContainer.addEventListener('transitionend', transitionEndHandler);
+
+      // Fallback for browsers that don't support transitionend
+      setTimeout(transitionEndHandler, transitionSettings.duration); 
+    }
+  }
+
+  nav.addEventListener('click', handleLinkClick);
 });
